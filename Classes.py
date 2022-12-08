@@ -3,9 +3,9 @@ import Color
 
 class Lotto(Lotto3):
     def test(self, correct_numbers):
-        print(f'Today’s Powerball winning numbers is:, ' + Color.MAGENTA + f"{self.user_numbers}", Color.YELLOW + f'{self.user_powerball}')
-        print(Color.RESET+f'Your Lucky_numbers Result:' + Color.MAGENTA + f"{self.todays_numbers}",
-              Color.YELLOW + f' {self.td_powerball}')
+        print(f'Today’s Powerball winning numbers is:\n' + Color.MAGENTA, *self.user_numbers, Color.YELLOW, *self.user_powerball)
+        print(Color.RESET+f'Your Lucky_numbers Result:\n' + Color.MAGENTA , *self.todays_numbers,
+              Color.YELLOW , *self.td_powerball)
         print(Color.RESET + f'You got {self.correct_numbers} correct numbers')
         if self.user_powerball == self.td_powerball and correct_numbers == 0:
             print("you got 4$")

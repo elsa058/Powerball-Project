@@ -1,6 +1,7 @@
 
 from random import randint
 
+print("\t\33[34m\33[1m\33[4m.....PowerBall Lottery System:.....\33[0m")
 
 class Lotto1():
     def __init__(self):
